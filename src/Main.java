@@ -19,9 +19,11 @@ public class Main {
             System.out.println("1. Insert Value");
             System.out.println("2. Delete Value");
             System.out.println("3. Search Value");
-            System.out.println("4. Display Traversals");
-            System.out.println("5. Display Tree Properties");
-            System.out.println("6. Exit");
+            System.out.println("4. Find Minimum");
+            System.out.println("5. Find Maximum");
+            System.out.println("6. Display Traversals");
+            System.out.println("7. Display Tree Properties");
+            System.out.println("8. Exit");
 
             System.out.print("\nEnter your choice: ");
             choice = scanner.nextInt();
@@ -63,6 +65,26 @@ public class Main {
 
                 case 4:
 
+                    try {
+                        System.out.println("Minimum Value: " + tree.findMin());
+                    } catch (IllegalStateException e) {
+                        System.out.println(e.getMessage());
+                    }
+
+                    break;
+
+                case 5:
+
+                    try {
+                        System.out.println("Maximum Value: " + tree.findMax());
+                    } catch (IllegalStateException e) {
+                        System.out.println(e.getMessage());
+                    }
+
+                    break;
+
+                case 6:
+
                     System.out.println("\nInorder Traversal:");
                     tree.inorder();
 
@@ -74,7 +96,7 @@ public class Main {
 
                     break;
 
-                case 5:
+                case 7:
 
                     System.out.println("\nTree Properties");
                     System.out.println("Height: " + tree.height());
@@ -83,7 +105,7 @@ public class Main {
 
                     break;
 
-                case 6:
+                case 8:
 
                     System.out.println("Program terminated.");
 
