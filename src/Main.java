@@ -118,7 +118,7 @@ public class Main {
 
             }
 
-        } while (choice != 6);
+        } while (choice != 8);
 
         scanner.close();
 
