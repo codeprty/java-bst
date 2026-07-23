@@ -85,20 +85,19 @@ public class Main {
 
                 case 6:
 
-                    System.out.println("\nInorder Traversal:");
+                    System.out.print("Inorder: ");
                     tree.inorder();
 
-                    System.out.println("\nPreorder Traversal:");
+                    System.out.print("Preorder: ");
                     tree.preorder();
 
-                    System.out.println("\nPostorder Traversal:");
+                    System.out.print("Postorder: ");
                     tree.postorder();
 
                     break;
 
                 case 7:
 
-                    System.out.println("\nTree Properties");
                     System.out.println("Height: " + tree.height());
                     System.out.println("Total Nodes: " + tree.countNodes());
                     System.out.println("Leaf Nodes: " + tree.countLeafNodes());
